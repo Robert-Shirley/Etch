@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+ 
+<div class ="containerMain">
+  
+    <main>Etch-A-Sketch   </main>
+    
+    <div id="leftMargin"></div>
+    <div id="Etch">
+      <div class="grid"></div>
+    </div>
+    <div id="rightMargin"></div>
+    <div id="PixelSize">
+      <button onclick = "clearColor()" class="buttonsBottom" >
+      <kbd>Clear</kbd></button><p>Pixel Size: Large to Small</p>
+      <div class="slidecontainer">
+        <input type="range" min="4" max="100" value="16" class="slider" id='myRange' onchange="pixelSize()">
+      </div>
+    
+    
+    
+    </div>
+   
+   
+   
+    <div id="ColorChooser">
+      <button onclick = "setColorBlack()" class="buttons" >
+      <kbd>Black</kbd></button>
+      <button onclick = "rainbowColor()" class="buttons" style="margin-left: 18px;">
+        <kbd>Random</kbd></button>
+        <button onclick = "eraserColor()" class="buttons" style="margin-left: 18px;">
+          <kbd>Eraser</kbd></button>
+          <button onclick = "userPicks()" class="buttons" style="width: auto; margin-left: 18px;">
+            Pick a color <input onchange="colorSelected(this)" type="color">
+          </div>
+    
+    </div>
+    <footer>Footer</footer>
+
+</div>
+
+
+
+  <script src="script.js">
+    </script>
+</body>
+</html>
+
